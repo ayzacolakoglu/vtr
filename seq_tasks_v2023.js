@@ -4,6 +4,7 @@
 
 // Start code blocks for 'Before Experiment'
 // init psychoJS:
+async function runExperiment() { 
 const psychoJS = new PsychoJS({
   debug: true
 });
@@ -1207,3 +1208,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+}
+
+// Start the experiment after the page loads
+window.addEventListener('load', runExperiment);
