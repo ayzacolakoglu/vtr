@@ -2,12 +2,13 @@
  * Seq_Tasks_V2023 *
  ************************/
 
-const { PsychoJS } = core;
-const { TrialHandler, MultiStairHandler } = data;
-const { Scheduler } = util;
-//some handy aliases as in the psychopy scripts;
+const { PsychoJS } = psychoJS.core;
+const { TrialHandler, MultiStairHandler } = psychoJS.data;
+const { Scheduler } = psychoJS.util;
+// some handy aliases as in the psychopy scripts
 const { abs, sin, cos, PI: pi, sqrt } = Math;
-const { round } = util;
+const { round } = psychoJS.util;
+
 
 
 // store info about the experiment session:
