@@ -2,7 +2,6 @@
  * Seq_Tasks_V2023 *
  ************************/
 
-import { core, data, sound, util, visual, hardware } from './lib/psychojs-2023.2.3.js';
 const { PsychoJS } = core;
 const { TrialHandler, MultiStairHandler } = data;
 const { Scheduler } = util;
