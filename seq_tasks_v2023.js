@@ -2,6 +2,12 @@
  * Seq_Tasks_V2023 *
  ************************/
 
+// Start code blocks for 'Before Experiment'
+// init psychoJS:
+const psychoJS = new PsychoJS({
+  debug: true
+});
+
 const { PsychoJS } = psychoJS.core;
 const { TrialHandler, MultiStairHandler } = psychoJS.data;
 const { Scheduler } = psychoJS.util;
@@ -19,11 +25,6 @@ let expInfo = {
     'age': '',
 };
 
-// Start code blocks for 'Before Experiment'
-// init psychoJS:
-const psychoJS = new PsychoJS({
-  debug: true
-});
 
 // open window:
 psychoJS.openWindow({
