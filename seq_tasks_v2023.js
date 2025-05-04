@@ -4,17 +4,19 @@
 
 // Start code blocks for 'Before Experiment'
 // init psychoJS:
-async function runExperiment() { 
-const psychoJS = new PsychoJS({
-  debug: true
-});
+function runExperiment() {
+  const psychoJS = new PsychoJS({
+    debug: true
+  });
 
-const { PsychoJS } = psychoJS.core;
-const { TrialHandler, MultiStairHandler } = psychoJS.data;
-const { Scheduler } = psychoJS.util;
-// some handy aliases as in the psychopy scripts
-const { abs, sin, cos, PI: pi, sqrt } = Math;
-const { round } = psychoJS.util;
+  const { TrialHandler, MultiStairHandler } = psychoJS.data;
+  const { Scheduler } = psychoJS.util;
+  const { abs, sin, cos, PI: pi, sqrt } = Math;
+  const { round } = psychoJS.util;
+
+  // continue with experiment setup...
+}
+
 
 
 
@@ -1208,7 +1210,3 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
-}
-
-// Start the experiment after the page loads
-window.addEventListener('load', runExperiment);
