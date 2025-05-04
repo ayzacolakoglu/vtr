@@ -6,23 +6,17 @@
 // init psychoJS:
 let psychoJS;
 let util;
-function runExperiment() {
-  const psychoJS = new PsychoJS({
-    debug: true
-    psychoJS = new PsychoJS({ debug: true });
-    util = psychoJS.util;
 
-  });
+function runExperiment() {
+  psychoJS = new PsychoJS({ debug: true });
+  util = psychoJS.util;
 
   const { TrialHandler, MultiStairHandler } = psychoJS.data;
   const { Scheduler } = psychoJS.util;
   const { abs, sin, cos, PI: pi, sqrt } = Math;
   const { round } = psychoJS.util;
-
   // continue with experiment setup...
 }
-
-
 
 
 // store info about the experiment session:
