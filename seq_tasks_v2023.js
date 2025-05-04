@@ -4,29 +4,28 @@
 
 // Start code blocks for 'Before Experiment'
 // init psychoJS:
-let psychoJS;
-let util;
-
-function runExperiment() {
-  psychoJS = new PsychoJS({ debug: true });
-  util = psychoJS.util;
-
-  const { TrialHandler, MultiStairHandler } = psychoJS.data;
-  const { Scheduler } = psychoJS.util;
-  const { abs, sin, cos, PI: pi, sqrt } = Math;
-  const { round } = psychoJS.util;
-
-  // store info about the experiment session:
-  let expName = 'seq_tasks_v2023';  // from the Builder filename that created this script
-  let expInfo = {
-    'participant': `${util.pad(Number.parseFloat(util.randint(0, 999999)).toFixed(0), 4)}`,
-    'gender (M/F)': '',
-    'age': '',
-  };
-
-  // continue with experiment setup...
-}
-
+import { core, data, sound, util, visual, hardware } from './lib/psychojs-2023.2.3.js';
+ const { PsychoJS } = core;
+ const { TrialHandler, MultiStairHandler } = data;
+ const { Scheduler } = util;
+ //some handy aliases as in the psychopy scripts;
+ const { abs, sin, cos, PI: pi, sqrt } = Math;
+ const { round } = util;
+ 
+ 
+ // store info about the experiment session:
+ let expName = 'seq_tasks_v2023';  // from the Builder filename that created this script
+ let expInfo = {
+     'participant': `${util.pad(Number.parseFloat(util.randint(0, 999999)).toFixed(0), 4)}`,
+     'gender (M/F)': '',
+     'age': '',
+ };
+ 
+ // Start code blocks for 'Before Experiment'
+ // init psychoJS:
+ const psychoJS = new PsychoJS({
+   debug: true
+ });
 
 // open window:
 psychoJS.openWindow({
