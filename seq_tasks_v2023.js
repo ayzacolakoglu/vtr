@@ -15,17 +15,17 @@ function runExperiment() {
   const { Scheduler } = psychoJS.util;
   const { abs, sin, cos, PI: pi, sqrt } = Math;
   const { round } = psychoJS.util;
-  // continue with experiment setup...
-}
 
-
-// store info about the experiment session:
-let expName = 'seq_tasks_v2023';  // from the Builder filename that created this script
-let expInfo = {
+  // store info about the experiment session:
+  let expName = 'seq_tasks_v2023';  // from the Builder filename that created this script
+  let expInfo = {
     'participant': `${util.pad(Number.parseFloat(util.randint(0, 999999)).toFixed(0), 4)}`,
     'gender (M/F)': '',
     'age': '',
-};
+  };
+
+  // continue with experiment setup...
+}
 
 
 // open window:
