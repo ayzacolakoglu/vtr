@@ -4,9 +4,14 @@
 
 // Start code blocks for 'Before Experiment'
 // init psychoJS:
+let psychoJS;
+let util;
 function runExperiment() {
   const psychoJS = new PsychoJS({
     debug: true
+    psychoJS = new PsychoJS({ debug: true });
+    util = psychoJS.util;
+
   });
 
   const { TrialHandler, MultiStairHandler } = psychoJS.data;
@@ -23,7 +28,7 @@ function runExperiment() {
 // store info about the experiment session:
 let expName = 'seq_tasks_v2023';  // from the Builder filename that created this script
 let expInfo = {
-    'participant': `${psychoJS.util.pad(Number.parseFloat(psychoJS.util.randint(0, 999999)).toFixed(0), 4)}`,
+    'participant': `${util.pad(Number.parseFloat(util.randint(0, 999999)).toFixed(0), 4)}`,
     'gender (M/F)': '',
     'age': '',
 };
